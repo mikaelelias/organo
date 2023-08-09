@@ -12,18 +12,21 @@ const Formulario = () => {
         'Devops',
         'UX e Design',
         'Mobile',
-        ' Inovação e Gestão'
+        'Inovação e Gestão'
     ]
+
+    const aoSalvar = () => {
+        console.log('Form foi Submetido')
+    }
 
     return (
         <section className="formulario">
-            <form>
+            <form onSubmit={aoSalvar}>
                 <h2>Preencha os dados para criar o card do colaborador</h2>
                 <CampoTexto label="Nome" placeholde="Digite seu nome" />
                 <CampoTexto label="Cargo" placeholder="Digite seu cargo" />
                 <CampoTexto label="Imagem" placeholder="Digite o endereço da imagem" />
-                <ListaSuspensa label="Time" itens={times} />
-
+                <ListaSuspensa label="Time" itens={times}/>
                 <Botao>
                     Criar card
                 </Botao>
