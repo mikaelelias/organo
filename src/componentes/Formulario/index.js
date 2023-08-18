@@ -15,7 +15,8 @@ const Formulario = () => {
         'Inovação e Gestão'
     ]
 
-    const aoSalvar = () => {
+    const aoSalvar = (evento) => {
+        evento
         console.log('Form foi Submetido')
     }
 
