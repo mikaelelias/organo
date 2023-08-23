@@ -1,9 +1,7 @@
 import './ListaSuspensa.css'
 
 const ListaSuspensa = (props) => {
-    console.log(props.label)
-
-    return (
+     return (
         <div className='lista-suspensa'>
             <label>{props.label}</label>
             <select required={props.required}>
