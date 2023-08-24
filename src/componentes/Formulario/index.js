@@ -4,6 +4,11 @@ import CampoTexto from '../CampoTexto'
 import ListaSuspensa from '../ListaSuspensa'
 import './Formulario.css'
 
+
+// props - 
+// hooks
+// useState
+
 const Formulario = (props) => {
 
     const times = [
